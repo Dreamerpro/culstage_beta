@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('holder');
 });
+Route::get('/iq', ['uses'=>'WelcomeCtrl@index']);

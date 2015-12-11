@@ -6,6 +6,10 @@ angular.module('cultstage',['ngRoute'])
 		controller: function($scope){
 		$scope.header=false;
 		}
-	});
+	})
+	.otherwise({
+		redirectTo:"/"
+	})
+	;
 }])
 ;
