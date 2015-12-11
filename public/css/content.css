@@ -42,7 +42,7 @@ p#line>span{
 	padding: 2px;
 	margin-bottom: 20px;
 	color: white;
-    /*text-shadow: 0.3px 1.5px 9px black;*/
+	    text-shadow: 0.3px 2px 0px black;
 	/*background: rgba(0,0,0,0.1);*/
 }
 input.form-control{
@@ -74,8 +74,8 @@ input.form-control{
 #signup>input[type=submit]:hover{
 	background-color: rgb(0,150,1);
 }
-.ss{
-	cursor: pointer;
+.ss>div{
+	
 	background-color: #D04735;
     padding: 15px;
     color: #fff;
@@ -87,21 +87,21 @@ input.form-control{
 	/*mix-blend-mode: luminosity;*/
 	text-shadow: 0.2px 2px #000;
 }
-.ss>span{
-	text-align: center;
-	padding-left: 15px
+.ss>div{
+	cursor: pointer;
 }
+
 #fp>a{
 	color: #fff;
 }
-#fbbtn{
+#fbbtn>div{
 /*background-image:url("../images/social.jpg");
 background-repeat: no-repeat;
 height: 50px;*/
     background-color: #2E4986;
 }
 
-.ss>i{
+.ss>div>i{
 	margin-right: 10px;
 	font-size: 20px;
 }
