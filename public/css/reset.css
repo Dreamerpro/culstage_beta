@@ -1,0 +1,26 @@
+@-ms-viewport{
+  width: device-width;
+}
+.container{
+	width:1200px !important;
+}
+@media(max-width: 768px){
+	.container{
+	width:100% !important;
+}
+}
+.jumbotron{
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+@font-face{
+	font-family:LucidaGrande;
+	src:url(../fonts/lucidagrande.ttf);
+}
+@font-face{
+	font-family:CI2;
+	src:url(../fonts/Capture_it_2.woff);
+}
+body{
+	font-family: "LucidaGrande", Helvetica Neue !important ;
+}
