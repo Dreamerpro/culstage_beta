@@ -60,7 +60,8 @@ input.form-control{
 	text-align: center;
 	font-weight: bold;
 	padding: 3px;
-	background: rgba(0,0,0,0.6);
+	/*background: rgba(0,0,0,0.6);*/
+
 }
 #signup>hr{
 	margin-top:-35px !important;
@@ -76,10 +77,10 @@ input.form-control{
 	background-color: rgb(0,150,1);
 }
 .ss{
-	padding: 0 !important
+	padding: 0 5px !important
 }
 .ss>div{
-	
+	cursor: pointer;
 	background-color: #D04735;
     padding: 15px;
     color: #fff;
@@ -91,9 +92,7 @@ input.form-control{
 	/*mix-blend-mode: luminosity;*/
 	text-shadow: 0.2px 2px #000;
 }
-.ss>div{
-	cursor: pointer;
-}
+
 
 #fp>a{
 	color: #fff;
