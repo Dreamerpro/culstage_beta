@@ -10,6 +10,7 @@
 }
 p#line{
 	margin-top: 25px;
+	    text-shadow: 0.3px 0.4px 0px black;
 }
 p#line>span{
 	text-align: center;
@@ -74,6 +75,9 @@ input.form-control{
 #signup>input[type=submit]:hover{
 	background-color: rgb(0,150,1);
 }
+.ss{
+	padding: 0 !important
+}
 .ss>div{
 	
 	background-color: #D04735;
@@ -102,13 +106,15 @@ height: 50px;*/
 }
 
 .ss>div>i{
-	margin-right: 10px;
-	font-size: 20px;
+	margin-right: 5px;
+	font-size: 15px;
 }
 .ss>div>span{
+	display: inline-block;
 	-webkit-transition:all linear 0.2s;
-	vertical-align: text-top;
-	font-size: 12px;
+	vertical-align: bottom;
+	font-size: 10px;
+
 }
 section.home-bottom{
 	color: white;
