@@ -105,9 +105,10 @@ height: 50px;*/
 	margin-right: 10px;
 	font-size: 20px;
 }
-.ss>span{
+.ss>div>span{
 	-webkit-transition:all linear 0.2s;
-	vertical-align: text-bottom;
+	vertical-align: text-top;
+	font-size: 12px;
 }
 section.home-bottom{
 	color: white;
