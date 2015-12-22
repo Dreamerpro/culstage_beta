@@ -4,27 +4,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/holder.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/content.css">
 	<link rel="stylesheet" type="text/css" href="css/media-control.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-
+	<!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> -->
+	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular.route.min.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/directive.js"></script>
+	<script type="text/javascript" src="js/filters.js"></script>
 </head>
 <body>
-	<header ng-controller="headerCtrl" ng-show="header">
-nav links
-	</header>
-	<div class="content" ng-view>
+	<sign-modal></sign-modal>
+	<div ng-class="{'header-bar':true,'clearfix':true,'th':islanding}">
+		<a href="#/"  class="pull-left"><i class="fa fa-modx"></i> CultStage</a>
+		<div ng-hide="islanding" class="search-bar-top col-md-4"><div class="form-group"><i class="fa fa-search"></i> <input class="form-control" type="text" placeholder="What are you searching?"></input> </div></div>
+		<div class="pull-right">
+		<a href="#/post" class="post-header-btn">Post a Job | Event</a>
+		<ul class="header-menu-bar pull-right">
+			<li> <a href="" data-toggle="modal" data-target="#sign-modal" ng-click="sign=0" >Sign Up</a></li><li><a href="" data-toggle="modal" data-target="#sign-modal" ng-click="sign=1" >Log In</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div ng-view >
 
 	</div>
+
 	<footer>
 
 			<div class="footer-contents">
@@ -63,7 +79,6 @@ nav links
 				</div>
 				 
 			</div>
-		</div>
 		
 	</footer>
 

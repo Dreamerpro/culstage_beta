@@ -1,0 +1,90 @@
+<div class="site-content clearfix">
+<top-nav></top-nav>
+
+	<div class="content container">
+	<div class="col-md-3 filter ">
+		<div class="list-group sub-menu" ng-controller="subRouteController">
+			<div class="list-group-item" ng-class="{'active-b':issma(0)}"><a href="#/events/interested">Interested Events (4)</a><i class="fa fa-sliders pull-right" ng-disabled=true></i> </div>
+			
+			<div class="list-group-item" ng-class="{'active-b':issma(1)}"><a href="#/events/post-new">Post New Event</a><!-- <i class="fa fa-plus"></i> --> </div>
+				<!-- <div class="list-group-item"></div> -->
+			</div>
+			
+		</div>
+
+		<div class="col-md-9">
+			<div class="init-message col-md-12" ng-hide="b">Your account needs to be verified before posting.</div>
+			<div class="form-container">
+				<form>
+					<div class="form-group">
+						<label>Event Name</label>
+						<input class="form-control" type="text" name="name" ng-model="name"></input>
+					</div>
+					<div class="form-group">
+						<label>Type</label>
+						<!-- <input class="form-control" type="text" name="type" ng-model="type"> -->
+						<select class="form-control input-sm" id="Type" name="Type" name="type" ng-model="type">
+							<option value=""></option>
+							<option value="conferences-trade-shows-expos">Conferences / Trade Shows / Expos</option>
+							<option value="film-festivals">Film Festivals</option>
+							<option value="industry-award-shows">Industry Award Shows</option>
+							<option value="local-meetings-networking">Local Meetings / Networking</option>
+							<option value="miscellaneous">Miscellaneous</option>
+							<option value="seminars-training-workshops">Seminars / Training / Workshops</option>
+							<option value="video-film-competitions">Video / Film Competitions</option>
+							<option value="webinars">Webinars</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Date<small><small class="text-info" > (Starting - Closing date)</small></small></label>
+						<br>
+						<!-- <br><input type="checkbox" ng-model="od"> -->
+						<div class="col-md-3" style="padding:0 !important">
+							<!-- <label><i class="fa fa-calendar col-md-2"></i></label> -->
+							<input class="form-control col-md-12"  type="date" name="starting_date" ng-model="startingdate">
+						</div>
+						<div class="col-md-3" style="padding:0 !important" >
+							<input class="form-control col-md-12" type="date" ng-model="closing_date" ng-model="closingdate"></input>
+						</div>
+						<div class="col-md-3" >
+							<i class="fa fa-square-o" ng-click="check=true" ng-class="{'fa-check-square-o':check}"></i> <span>One day event.</span>
+						</div>
+
+						<br>
+					</div>
+					<div class="form-group">
+						<label>Time<small><small class="text-info" > (Starting - Closing time)</small></small></label>
+						<br>
+						<!-- <br><input type="checkbox" ng-model="od"> -->
+						<div class="col-md-3" style="padding:0 !important">
+							<!-- <label><i class="fa fa-calendar col-md-2"></i></label> -->
+							<input class="form-control col-md-12" type="time" name="starting_time" ng-model="startingtime">
+						</div>
+						<div class="col-md-3" style="padding:0 !important" >
+							<input class="form-control col-md-12" type="time" name="closing_time" ng-model="closingtime"></input>
+						</div>
+						<!-- <div class="col-md-3" >
+							<i class="fa fa-square-o" ng-click="check=true" ng-class="{'fa-check-square-o':check}"></i> <span>One day event.</span>
+						</div> -->
+
+						<br>
+					</div>
+					<div class="form-group">
+						<label>Description</label>
+						<br>
+						<textarea class="form-control" name="description" ng-model="description">
+
+						</textarea>
+					</div>
+					<div class="form-group">
+						<label>Image</label>
+						<input class="form-control" type="file"></input>
+						<img >
+					</div>
+					<input class="btn btn-host col-md-1" value="Submit"></input>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

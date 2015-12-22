@@ -1,0 +1,53 @@
+<div class="site-content clearfix">
+<top-nav></top-nav>
+
+	<div class="content container">
+		<div class="col-md-3">
+		<!-- <div class="panel-heading"><h4 style="color:#565a5c"><i class="fa fa-inbox"></i> My inbox</h4></div> -->
+    		<job-side-menu></job-side-menu>
+		</div>
+		<div class="col-md-9" ng-controller="AddNewJobCtrl">
+			<div class="init-message col-md-12" ng-hide="b">Please select an Existing Project or create new one.</div>
+			<div class="form-group col-md-6 ">
+				<select class="form-control" ng-model="projectid" ng-change="updateLayout()">
+					<option value="">Project</option>
+					<option value="x">Kung Fu Panda 3</option>
+				</select>
+			</div>
+			<div class="btn btn-success pull-right ">Create</div>
+			<hr>
+		<br>
+			<div class="add-job-form col-md-12" ng-show="b">
+				<form name="addJob">
+					<div class="form-group">
+						<label>Project Title</label>
+						<input class="form-control" type="text" placeholder="Project Title"></input>
+					</div>
+					<div class="form-group">
+						<label>Requirement</label>
+						<input class="form-control" text="text" placeholder="Need a guitarist?">
+					</div>
+					<div class="form-group">
+						<label>Description <small>(max 200 character)</small></label>
+						<textarea class="form-control" maxlength="200" placeholder="Need a lead guitarist that cover Pink Floyd and Deep Purple. We gig every weekend."></textarea>
+					</div>
+					<div class="form-group">
+						<label>Add an image</label>
+						<div class="img-placeholder"></div> <br>
+						<button class="btn btn-host">Upload</button>
+					</div>
+					<div class="form-group">
+						<label>Language</label>
+						<input class="form-control" type="text" placeholder="Language">
+					</div>
+					<div class="form-group">
+						<label>Location</label>
+						<input class="form-control" type="text" placeholder="location">
+					</div>
+						<input class="btn btn-red" value="Post" type="submit">
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
